@@ -7,6 +7,7 @@
   }
   
   body {
+    height: 100vh;
     background: linear-gradient(220deg, #12c2e9, #c471ed , #f64f59);
     background-size: 400% 400%;
 
@@ -30,17 +31,21 @@
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+.todoapp-center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   .todo-app {
     display: flex;
-    flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     width: 520px;
-    min-height: 600px;
+    min-height: 500px;
     background: #333;
     text-align: center;
-    margin: 128px auto;
     border-radius: 10px;
-    padding-bottom: 32px;
+    padding-bottom: 50px;
   }
   
   h1 {
@@ -175,12 +180,12 @@
 
   @media screen and (max-width: 460px) {
     .todo-app {
-        width: 300px;
+        width: 400px;
     }
     .todo-input {
-        width: 200px;
+        width: 280px;
     }
     h1 {
-        font-size: 18px;
+        font-size: 22px;
     }
   }
